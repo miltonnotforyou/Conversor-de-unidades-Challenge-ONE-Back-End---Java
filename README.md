@@ -23,6 +23,12 @@ O conversor de moeda deverá:
 - Converter de Reais a Peso Chileno
 - Lembrando que deve ser possível também converter de forma inversa.
 
+Para obter a cotação das moedas utilizei a API do Banco Central do Brasil:
+
+[Documentação da API](https://dadosabertos.bcb.gov.br/dataset/dados-cadastrais-de-entidades-autorizadas/resource/8600cf18-b981-456c-9ed1-bddec2690b71)
+
+[Buscador dos códigos das moedas](https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries)
+
 Como adicional eu implementei:
 
 - Conversor de Unidades de peso
