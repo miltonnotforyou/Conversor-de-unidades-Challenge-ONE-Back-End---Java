@@ -41,3 +41,12 @@ Como adicional eu implementei:
 
 ## Resultado
 
+![image](https://user-images.githubusercontent.com/67373586/226997648-9a528198-992d-47bc-b78d-7a51fdb48641.png)
+![image](https://user-images.githubusercontent.com/67373586/226997766-9077192d-84e7-4737-9932-1aad5691edc8.png)
+<br>
+
+![image](https://user-images.githubusercontent.com/67373586/226997950-4db4e518-6270-42bb-9626-df5d3074e9af.png)
+![image](https://user-images.githubusercontent.com/67373586/226998178-0ce1baa2-c41a-472e-a1d1-08fed6ff6b37.png)
+
+
+
