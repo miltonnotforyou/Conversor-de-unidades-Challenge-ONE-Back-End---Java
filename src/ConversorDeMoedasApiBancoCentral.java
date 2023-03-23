@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Arrays;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -131,7 +132,7 @@ public class ConversorDeMoedasApiBancoCentral {
     public static void executarConversor() throws IOException {
         //O loop while é executado até que o usuário decida encerrar o programa.
         int continuar = 0;
-        while (continuar != 1) {
+        while (continuar != JOptionPane.NO_OPTION) {
             String[] opcoes = {"Real para Dólar",
                     "Real para Euro",
                     "Real para Libras Esterlinas",
@@ -142,38 +143,39 @@ public class ConversorDeMoedasApiBancoCentral {
                     "Libras Esterlinas para Real",
                     "Peso argentino para Real",
                     "Peso Chileno para Real"};
-            int opcao = JOptionPane.showOptionDialog(null, "Selecione a conversão desejada:", "Conversor de Moedas ", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, icon, opcoes, opcoes[0]);
+            String opcao = (String) JOptionPane.showInputDialog(null, "Selecione a conversão desejada:", "Conversor de Moedas", JOptionPane.PLAIN_MESSAGE, icon, opcoes, opcoes[0]);
 
             String moedaOrigem = "";
             String moedaDestino = "";
-            if (opcao == 0) {
+            int opcaoIndex = Arrays.asList(opcoes).indexOf(opcao);
+            if (opcaoIndex == 0) {
                 moedaOrigem = "Reais";
                 moedaDestino = "Dólares";
-            } else if (opcao == 1) {
+            } else if (opcaoIndex == 1) {
                 moedaOrigem = "Reais";
                 moedaDestino = "Euros";
-            } else if (opcao == 2) {
+            } else if (opcaoIndex == 2) {
                 moedaOrigem = "Reais";
                 moedaDestino = "Libras Esterlinas";
-            } else if (opcao == 3) {
+            } else if (opcaoIndex == 3) {
                 moedaOrigem = "Reais";
                 moedaDestino = "Pesos Argentinos";
-            } else if (opcao == 4) {
+            } else if (opcaoIndex == 4) {
                 moedaOrigem = "Reais";
                 moedaDestino = "Pesos Chilenos";
-            } else if (opcao == 5) {
+            } else if (opcaoIndex == 5) {
                 moedaOrigem = "Dólares";
                 moedaDestino = "Reais";
-            } else if (opcao == 6) {
+            } else if (opcaoIndex == 6) {
                 moedaOrigem = "Euros";
                 moedaDestino = "Reais";
-            } else if (opcao == 7) {
+            } else if (opcaoIndex == 7) {
                 moedaOrigem = "Libras Esterlinas";
                 moedaDestino = "Reais";
-            } else if (opcao == 8) {
+            } else if (opcaoIndex == 8) {
                 moedaOrigem = "Pesos Argentinos";
                 moedaDestino = "Reais";
-            } else if (opcao == 9) {
+            } else if (opcaoIndex == 9) {
                 moedaOrigem = "Pesos Chilenos";
                 moedaDestino = "Reais";
             }
