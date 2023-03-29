@@ -72,15 +72,15 @@ public class ConversorDeMoedasApiBancoCentral {
             } else {
                 URL urlDestino = null;
                 if (moedaOrigem.equals("Dólares") && moedaDestino.equals("Reais")) {
-                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados/ultimos/1?formato=json");
+                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.10813/dados/ultimos/1?formato=json");
                 } else if (moedaOrigem.equals("Euros") && moedaDestino.equals("Reais")) {
-                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.21620/dados/ultimos/1?formato=json");
+                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.21619/dados/ultimos/1?formato=json");
                 } else if (moedaOrigem.equals("Libras Esterlinas") && moedaDestino.equals("Reais")) {
-                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.21625/dados/ultimos/1?formato=json");
+                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.21624/dados/ultimos/1?formato=json");
                 } else if (moedaOrigem.equals("Pesos Argentinos") && moedaDestino.equals("Reais")) {
-                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.14002/dados/ultimos/1?formato=json");
+                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.14001/dados/ultimos/1?formato=json");
                 } else if (moedaOrigem.equals("Pesos Chilenos") && moedaDestino.equals("Reais")) {
-                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.3935/dados/ultimos/1?formato=json");
+                    urlDestino = new URL("https://api.bcb.gov.br/dados/serie/bcdata.sgs.3934/dados/ultimos/1?formato=json");
                 }
 
                 // Obtém a cotação da moeda de destino em relação à moeda de origem
