@@ -1,5 +1,6 @@
 # Conversor de unidades Challenge ONE Back End Java
 Um conversor em Java que converte moedas, unidades de temperatura, unidades de peso e unidades de velocidade
+Esse projeto consiste em uma API que utiliza a cotação de moedas do Banco Central para converter um valor de uma moeda de origem para uma moeda de destino.
 <img align=left src="https://i.imgur.com/P9fjzh4.png" height=150 alt="badge-challenge">
 
 <h2 align=center>Challenge ONE Back End - Java</h2>
@@ -9,7 +10,7 @@ Um conversor em Java que converte moedas, unidades de temperatura, unidades de p
 <img height="80" margin="10" src="https://i.imgur.com/9Gq6RS0.png">
 </div>
 
-### Sprint 01: Crie seu próprio conversor de moeda utilizando a linguagem Java.
+>## Sprint 01: Crie seu próprio conversor de moeda utilizando a linguagem Java.
 
 
 As características solicitadas por nosso cliente são as seguintes:
@@ -36,6 +37,45 @@ Como adicional eu implementei:
 - Conversor de Unidades de temperatura
 
 <br>
+
+
+
+>## Pré-requisitos
+
+    Java 8 ou superior
+    Biblioteca gson-2.8.5.jar
+
+>## Como utilizar
+
+    Faça o download da biblioteca gson-2.8.5.jar
+
+    Compile o arquivo ConversorDeMoedasApiBancoCentral.java utilizando o seguinte comando:
+
+    bash
+
+javac -cp "gson-2.8.5.jar" ConversorDeMoedasApiBancoCentral.java
+
+Rode o programa utilizando o seguinte comando:
+
+bash
+
+    java -cp ".:gson-2.8.5.jar" ConversorDeMoedasApiBancoCentral
+
+    Insira o valor a ser convertido, a moeda de origem e a moeda de destino quando solicitado.
+
+>## Exemplo de uso
+
+Insira o valor a ser convertido: 100
+Insira a moeda de origem: Reais
+Insira a moeda de destino: Dólares
+
+Resultado: 100.00 reais = 19.32 dólares
+
+>## Observações
+Caso a moeda de origem seja Real, o valor é dividido pela cotação da moeda de origem para obter o valor na moeda de destino.
+Caso a moeda de origem não seja Real, é obtida a cotação da moeda de origem em relação ao Real e em seguida é obtida a cotação da moeda de destino em relação ao Real. O valor é convertido primeiro para Reais e em seguida para a moeda de destino.
+    
+ 
 
 ## Resultado
 
