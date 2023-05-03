@@ -75,7 +75,83 @@ Resultado: 100.00 reais = 19.32 dólares
 Caso a moeda de origem seja Real, o valor é dividido pela cotação da moeda de origem para obter o valor na moeda de destino.
 Caso a moeda de origem não seja Real, é obtida a cotação da moeda de origem em relação ao Real e em seguida é obtida a cotação da moeda de destino em relação ao Real. O valor é convertido primeiro para Reais e em seguida para a moeda de destino.
     
- 
+ > English:
+
+# Unit Converter Challenge ONE Back End Java
+
+A Java converter that converts currencies, temperature units, weight units, and speed units.
+This project consists of an API that uses the exchange rate of currencies from the Central Bank to convert a value from a source currency to a destination currency.
+<img align=left src="https://i.imgur.com/P9fjzh4.png" height=150 alt="badge-challenge">
+
+<h2 align=center>Challenge ONE Back End - Java</h2>
+
+<div align=center>
+
+<img height="80" margin="10" src="https://i.imgur.com/9Gq6RS0.png">
+</div>
+
+    Sprint 01: Create your own currency converter using the Java language.
+
+The features requested by our client are:
+
+The currency converter should:
+
+    Convert from Reais to Dollars
+    Convert from Reais to Euros
+    Convert from Reais to British Pounds
+    Convert from Reais to Argentine Pesos
+    Convert from Reais to Chilean Pesos
+    Remembering that it should also be possible to convert in reverse.
+
+To obtain the currency quotes, I used the API from the Central Bank of Brazil:
+
+API Documentation
+
+Currency Code Finder
+
+As an additional feature, I implemented:
+
+    Weight unit converter
+    Speed unit converter
+    Temperature unit converter
+
+<br>
+
+    Prerequisites
+
+Java 8 or higher
+gson-2.8.5.jar library
+
+    How to use
+
+Download the gson-2.8.5.jar library
+
+Compile the file ConversorDeMoedasApiBancoCentral.java using the following command:
+
+bash
+
+javac -cp "gson-2.8.5.jar" ConversorDeMoedasApiBancoCentral.java
+
+Run the program using the following command:
+
+bash
+
+java -cp ".:gson-2.8.5.jar" ConversorDeMoedasApiBancoCentral
+
+Enter the value to be converted, the source currency, and the destination currency when prompted.
+
+    Example of use
+
+Enter the value to be converted: 100
+Enter the source currency: Reais
+Enter the destination currency: Dollars
+
+Result: 100.00 reais = 19.32 dollars
+
+    Remarks
+
+If the source currency is Real, the value is divided by the exchange rate of the source currency to obtain the value in the destination currency.
+If the source currency is not Real, the exchange rate of the source currency relative to the Real is obtained and then the exchange rate of the destination currency relative to the Real is obtained. The value is first converted to Reais and then to the destination currency.
 
 ## Resultado
 
@@ -90,6 +166,5 @@ Caso a moeda de origem não seja Real, é obtida a cotação da moeda de origem 
 
 ![image](https://user-images.githubusercontent.com/67373586/226997950-4db4e518-6270-42bb-9626-df5d3074e9af.png)
 ![image](https://user-images.githubusercontent.com/67373586/226998178-0ce1baa2-c41a-472e-a1d1-08fed6ff6b37.png)
-
 
 
